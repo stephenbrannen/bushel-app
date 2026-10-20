@@ -53,7 +53,7 @@ main { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
   display: flex; justify-content: center; align-items: flex-start; gap: 24px;
   flex-wrap: wrap; margin: 48px 0 16px;
 }
-.screens img { width: 100%; max-width: 360px; height: auto; }
+.screens img { width: 100%; max-width: 466px; height: auto; }
 .wide { margin: 32px 0; }
 .wide img { width: 100%; height: auto; border-radius: 16px; display: block; }
 .caption { text-align: center; color: var(--muted); font-size: 15px; margin: 8px 0 0; }

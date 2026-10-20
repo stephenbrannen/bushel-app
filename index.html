@@ -27,8 +27,14 @@
   </section>
 
   <section class="screens">
-    <img src="images/overview.png" alt="Bushel's Overview: a six-month activity heatmap, total tokens, sessions, streaks, messages and tool calls, with plan limits below">
-    <img src="images/models.png" alt="Bushel's Models view: tokens per day stacked by model, each model's share, and plan limits">
+    <picture>
+      <source srcset="images/overview-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="images/overview-light.png" width="466" height="730" alt="Bushel's Overview: a six-month activity heatmap, total tokens, sessions, streaks, messages and tool calls, with plan limits below">
+    </picture>
+    <picture>
+      <source srcset="images/models-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="images/models-light.png" width="466" height="581" alt="Bushel's Models view: tokens per day stacked by model, each model's share, and plan limits">
+    </picture>
   </section>
 
   <section class="features">
@@ -59,7 +65,10 @@
   </section>
 
   <section class="wide">
-    <img src="images/widgets.jpg" alt="Bushel's small, medium and large desktop widgets showing today's tokens, plan limits and a daily chart">
+    <picture>
+      <source srcset="images/widgets-dark.jpg" media="(prefers-color-scheme: dark)">
+      <img src="images/widgets-light.jpg" width="1920" height="1200" alt="Bushel's small, medium and large desktop widgets showing today's tokens, plan limits and a daily chart">
+    </picture>
     <p class="caption">Small, medium and large widgets. Each one can show your plan limits or your top models.</p>
   </section>
 </main>
