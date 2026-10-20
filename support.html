@@ -21,17 +21,29 @@
   <h1>Support</h1>
   <p class="lead">Questions, bugs or ideas? Email <a href="mailto:stephen@bushelapp.org">stephen@bushelapp.org</a>. I read everything.</p>
 
-  <h2>Getting started</h2>
-  <p>When Bushel opens for the first time, click <strong>Allow Access</strong>. macOS asks you to pick a folder, and it opens at your <code>.claude</code> folder, so you just click Allow. Bushel then counts your Claude Code usage.</p>
-  <p>To also count Claude in Xcode or Cowork in the Claude app, click <strong>Connect</strong> next to each one in the welcome window or in Settings. You can change or disconnect any of them in Settings › Sources.</p>
+  <h2 id="sources">Sources</h2>
+  <p>Bushel counts tokens from three places. It only reads them and never changes anything.</p>
+  <ul>
+    <li><strong>Claude Code:</strong> your <code>.claude</code> folder.</li>
+    <li><strong>Claude in Xcode:</strong> Xcode's <code>ClaudeAgentConfig</code> folder.</li>
+    <li><strong>Claude app:</strong> your Cowork sessions. Chats in the Claude app aren't saved on your Mac, so Bushel can't count them.</li>
+  </ul>
+  <p>When Bushel opens for the first time, click <strong>Allow Access</strong>. The folder picker opens at your <code>.claude</code> folder, so you just click Allow. To add the others, click <strong>Connect</strong> next to each one in the welcome window or in Settings › Sources. Use <strong>Change…</strong> if a folder is somewhere else.</p>
+  <p>macOS asks once per folder. If you use Claude Code in more than one place, each response is still counted once.</p>
 
-  <h2>Plan limits</h2>
-  <p>Claude Code only shares your 5-hour and weekly limits with its status line, so Bushel needs one line added there. Open Bushel's Settings, go to <strong>Plan limits</strong>, and copy the setting into <code>~/.claude/settings.json</code>. There's an <strong>Open settings.json</strong> button for that.</p>
+  <h2 id="plan-limits">Plan limits</h2>
+  <p>Claude Code shares your 5-hour and weekly limits only with its status line. So Bushel needs one setting there, which saves a copy of the limits in your <code>.claude</code> folder.</p>
+  <ol>
+    <li>Open Bushel's Settings and go to Sources › Limit sources.</li>
+    <li>Click <strong>Copy Setting</strong>, then <strong>Open settings.json</strong>.</li>
+    <li>Paste the setting into the file and save it.</li>
+  </ol>
   <ul>
     <li>Limits only show on Pro and Max plans.</li>
     <li>They show up after the first response in a Claude Code session.</li>
-    <li>They come from Claude Code in a terminal. Claude Code in the Claude app has no status line, so it can't report them. Your usage from the Claude app still counts toward the same limits.</li>
-    <li>If another tool manages your status line, it may replace the change. Add the line again if the limits stop updating.</li>
+    <li>They come from Claude Code in a terminal. Claude Code in the Claude app has no status line, so it can't report them. Your Claude app usage still counts toward the same limits.</li>
+    <li>The setting replaces any status line you already have.</li>
+    <li>If another tool manages your status line, it may replace the setting. Add it again if your limits stop updating.</li>
   </ul>
 
   <h2>Widgets</h2>
