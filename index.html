@@ -3,65 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bushel, an LLM token tracker for macOS</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    margin: 0; padding: 0 24px;
-    display: flex; flex-direction: column; align-items: center;
-    text-align: center;
-  }
-  main { max-width: 640px; padding: 64px 0; }
-  img.icon { width: 128px; height: 128px; }
-  h1 { font-size: 44px; margin: 24px 0 8px; }
-  .tagline { font-size: 20px; opacity: 0.7; margin: 0 0 32px; }
-  .soon {
-    display: inline-block; padding: 12px 28px; border-radius: 10px;
-    background: #007aff; color: #fff; font-weight: 600; font-size: 18px;
-  }
-  .req { font-size: 14px; opacity: 0.6; margin-top: 12px; }
-  .features { margin: 64px 0 8px; }
-  .feature { margin: 40px 0; }
-  .feature h3 { font-size: 24px; margin: 0 0 4px; }
-  .feature p { opacity: 0.7; margin: 0 auto; max-width: 460px; }
-  .support { margin-top: 48px; }
-  footer { font-size: 13px; opacity: 0.5; margin-top: 56px; }
-  a { color: #007aff; }
-</style>
+<title>Bushel: Claude token usage and plan limits for your Mac</title>
+<meta name="description" content="See your Claude token usage and your 5-hour and weekly plan limits from the menu bar and desktop widgets. Everything stays on your Mac.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <img class="icon" src="icon.png" alt="Bushel icon">
-  <h1>Bushel</h1>
-  <p class="tagline">See how many tokens your AI coding tools use, right from the menu bar.</p>
+<nav>
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Bushel</a>
+  <div class="links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</nav>
 
-  <span class="soon">Coming soon to the Mac App Store</span>
-  <p class="req">Requires macOS 14 (Sonoma) or later.</p>
+<main>
+  <section class="hero">
+    <img class="icon" src="icon.png" alt="Bushel icon">
+    <h1>Know where your Claude tokens go</h1>
+    <p class="tagline">Bushel shows your token usage from Claude Code, Claude in Xcode and Cowork, plus how much of your 5-hour and weekly limits you've used. Right in your menu bar.</p>
+    <span class="badge">Coming soon to the Mac App Store</span>
+    <p class="requirement">Requires macOS 14 (Sonoma) or later.</p>
+  </section>
+
+  <section class="screens">
+    <img src="images/overview.png" alt="Bushel's Overview: a six-month activity heatmap, total tokens, sessions, streaks, messages and tool calls, with plan limits below">
+    <img src="images/models.png" alt="Bushel's Models view: tokens per day stacked by model, each model's share, and plan limits">
+  </section>
 
   <section class="features">
     <div class="feature">
-      <h3>Today's usage at a glance</h3>
-      <p>The menu bar shows the tokens you've used today. Click for the last 7 days, 30 days, or all time.</p>
+      <h3>Today, at a glance</h3>
+      <p>Today's token count sits right next to the icon in your menu bar. Click it for the last 7 days, 30 days or all time.</p>
     </div>
     <div class="feature">
-      <h3>Every model, side by side</h3>
-      <p>A daily chart and breakdown show input, output, and cache tokens for each model you use.</p>
+      <h3>Plan limits</h3>
+      <p>Your 5-hour and weekly limits, with a countdown to each reset. The bars turn orange, then red, when you're getting close.</p>
     </div>
     <div class="feature">
-      <h3>Private by design</h3>
-      <p>Bushel reads usage from files already on your Mac. Nothing leaves your computer.</p>
+      <h3>Every model</h3>
+      <p>A daily chart split by model, and how much each one used, with input, output and cache broken out.</p>
+    </div>
+    <div class="feature">
+      <h3>Your habits</h3>
+      <p>Sessions, messages, tool calls, your busiest hour, your longest session and your streaks. Plus a heatmap of the last six months.</p>
+    </div>
+    <div class="feature">
+      <h3>History that stays</h3>
+      <p>Claude Code deletes old session files after a while. Bushel keeps your daily totals, so you don't lose them.</p>
+    </div>
+    <div class="feature">
+      <h3>Private</h3>
+      <p>Bushel only reads the folders you point it at and never changes anything. No account, no analytics, and nothing leaves your Mac.</p>
     </div>
   </section>
 
-  <div class="support">
-    <h2>Support</h2>
-    <p>Questions, bugs, or feature requests? Email
-       <a href="mailto:stephen@bushelapp.org">stephen@bushelapp.org</a>.</p>
-    <p><a href="privacy.html">Privacy Policy</a></p>
-  </div>
-
-  <footer>© 2026 Stephen Brannen · <a href="mailto:stephen@bushelapp.org">stephen@bushelapp.org</a></footer>
+  <section class="wide">
+    <img src="images/widgets.jpg" alt="Bushel's small, medium and large desktop widgets showing today's tokens, plan limits and a daily chart">
+    <p class="caption">Small, medium and large widgets. Each one can show your plan limits or your top models.</p>
+  </section>
 </main>
+
+<footer>
+  <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:stephen@bushelapp.org">stephen@bushelapp.org</a></p>
+  <p>© 2026 Stephen Brannen. Bushel isn't made by or affiliated with Anthropic. Claude and Claude Code are trademarks of Anthropic.</p>
+</footer>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bushel Support</title>
+<meta name="description" content="Help with setting up Bushel, plan limits and widgets, and how to get in touch.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html"><img src="icon.png" alt="">Bushel</a>
+  <div class="links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<main class="page">
+  <h1>Support</h1>
+  <p class="lead">Questions, bugs or ideas? Email <a href="mailto:stephen@bushelapp.org">stephen@bushelapp.org</a>. I read everything.</p>
+
+  <h2>Getting started</h2>
+  <p>When Bushel opens for the first time, click <strong>Allow Access</strong>. macOS asks you to pick a folder, and it opens at your <code>.claude</code> folder, so you just click Allow. Bushel then counts your Claude Code usage.</p>
+  <p>To also count Claude in Xcode or Cowork in the Claude app, click <strong>Connect</strong> next to each one in the welcome window or in Settings. You can change or disconnect any of them in Settings › Sources.</p>
+
+  <h2>Plan limits</h2>
+  <p>Claude Code only shares your 5-hour and weekly limits with its status line, so Bushel needs one line added there. Open Bushel's Settings, go to <strong>Plan limits</strong>, and copy the setting into <code>~/.claude/settings.json</code>. There's an <strong>Open settings.json</strong> button for that.</p>
+  <ul>
+    <li>Limits only show on Pro and Max plans.</li>
+    <li>They show up after the first response in a Claude Code session.</li>
+    <li>If you already have a status line, copy the command instead and put it in front of yours.</li>
+    <li>If another tool manages your status line, it may replace the change. Add the line again if the limits stop updating.</li>
+  </ul>
+
+  <h2>Widgets</h2>
+  <p>Control-click the desktop, choose <strong>Edit Widgets</strong>, and search for Bushel. Pick small, medium or large.</p>
+  <p>To choose what a widget shows, Control-click it and choose <strong>Edit "Bushel"</strong>. You can show plan limits or your top models, and pick 7 days, 30 days or all time.</p>
+  <p>If a widget says <strong>Open Bushel</strong>, Bushel isn't running. Widgets show the numbers Bushel last saved, so open the app and they'll update.</p>
+
+  <h2>Questions</h2>
+
+  <h3>Why does Bushel ask for a folder?</h3>
+  <p>Mac App Store apps can't read your files unless you let them. Bushel asks once per folder, only reads it, and remembers your choice.</p>
+
+  <h3>Why are my numbers bigger than I expected?</h3>
+  <p>Bushel counts cache tokens too, the same way Claude Code's old stats screen did. Cache reads are usually most of the total. The Models view breaks out input, output and cache for each model.</p>
+
+  <h3>Does Bushel count my chats in the Claude app?</h3>
+  <p>No. Chats aren't saved on your Mac, so there's nothing to count. Cowork sessions are saved, so those are counted once you connect the Claude app.</p>
+
+  <h3>My older history is gone. Can I get it back?</h3>
+  <p>Claude Code deletes old session files after a while. Bushel counts every session file still on your Mac and keeps the daily totals, so nothing it has counted is lost. If Claude Code's old stats file is still there, Bushel imports the days before that too.</p>
+
+  <h3>How do I delete Bushel's data?</h3>
+  <p>In Settings, choose <strong>Delete Saved History</strong>. To remove everything, see the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Still stuck?</h2>
+  <p>Email <a href="mailto:stephen@bushelapp.org">stephen@bushelapp.org</a> with your macOS version and what you're seeing. A screenshot helps.</p>
+</main>
+
+<footer>
+  <p><a href="index.html">Bushel</a> · <a href="privacy.html">Privacy Policy</a> · © 2026 Stephen Brannen</p>
+</footer>
+</body>
+</html>
