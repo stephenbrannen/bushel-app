@@ -47,6 +47,7 @@ main { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
   display: inline-block; padding: 12px 28px; border-radius: 12px;
   background: var(--accent); color: #fff; font-weight: 600; font-size: 17px;
 }
+a.badge:hover { text-decoration: none; opacity: 0.9; }
 .requirement { font-size: 14px; color: var(--muted); margin-top: 12px; }
 
 .screens {
